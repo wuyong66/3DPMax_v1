@@ -328,3 +328,17 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+# mygitignore
+3DPMax/Debug/
+3DPMax/Release/
+3DPMax/res/
+
+*.bmp
+
+FlashBmp/
+
+MDB/
+
+Model/
+
