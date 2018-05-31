@@ -1,0 +1,960 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\3DPMax.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\icon1.ico"
+IDR_MY3DPMTYPE          ICON    DISCARDABLE     "res\\3DPMaxDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "res\\Flash.bmp"
+IDB_SPLASH1             BITMAP  DISCARDABLE     "Splsh16.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  39, 35
+BEGIN
+    BUTTON      ID_STL_FILEIN
+    SEPARATOR
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_BIN2ASC
+    SEPARATOR
+    BUTTON      ID_BUTTON_SLICE
+    SEPARATOR
+    BUTTON      ID_BUTTON_FILL
+    SEPARATOR
+    BUTTON      ID_BUTTON_CHKPLA
+    SEPARATOR
+    BUTTON      ID_PRINTING
+    SEPARATOR
+    BUTTON      ID_BUTMODBUS
+    SEPARATOR
+    BUTTON      ID_BUTTON_MODBUS_TCP
+    SEPARATOR
+    BUTTON      ID_BUTTON_PROCESS
+    SEPARATOR
+    BUTTON      ID_VIEW_FRONT
+    SEPARATOR
+    BUTTON      ID_VIEW_BEHIND
+    SEPARATOR
+    BUTTON      ID_VIEW_LEFT
+    SEPARATOR
+    BUTTON      ID_VIEW_RIGHT
+    SEPARATOR
+    BUTTON      ID_VIEW_TOP
+    SEPARATOR
+    BUTTON      ID_VIEW_BOTTOM
+    SEPARATOR
+    BUTTON      ID_VIEW_NE_ISOMETRIC
+    SEPARATOR
+    BUTTON      ID_VIEW_SHADE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "清除(&C)\tCtrl+C",            ID_FILE_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "正视图(&F)",                  ID_VIEW_FRONT
+        MENUITEM "左视图(&L)",                  ID_VIEW_LEFT
+        MENUITEM "俯视图(&T)",                  ID_VIEW_TOP
+        MENUITEM "右视图(&R)",                  ID_VIEW_RIGHT
+        MENUITEM "后视图(&B)",                  ID_VIEW_BEHIND
+        MENUITEM "底视图(&b)",                  ID_VIEW_BOTTOM
+        MENUITEM "斜二测(&I)",                  ID_VIEW_NE_ISOMETRIC
+    END
+    POPUP "查看(&C)"
+    BEGIN
+        MENUITEM "查看层轮廓(&O)",              ID_MENUOUTLINE
+        MENUITEM "查看喷头分布(&P)",            ID_MENUPRINTER
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "BinToAscOfSTL(&B)",           ID_BIN2ASC
+        MENUITEM "模型属性(&M)",                ID_MODAL_PROPERTY
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 3DPMax(&A)...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 3DPMax"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "3DPMax 17.03.01 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "南方增材科技有限公司版权所有 (C) 2017",IDC_STATIC,40,25,
+                    141,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_3DPSTA DIALOGEX 0, 0, 195, 216
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "当前打印进度"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,71,188,50,14
+    GROUPBOX        "当前打印进度",IDC_STATIC,16,25,160,156
+    LTEXT           "当前打印层：",IDC_STATIC,26,45,48,14
+    LTEXT           "当前打印头：",IDC_STATIC,25,77,49,14
+    EDITTEXT        IDC_CENG_NUM,74,41,94,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PRINT_NUM,74,74,94,16,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "当前总进度：",IDC_STATIC,25,112,49,14
+    EDITTEXT        IDC_EDIT3,75,108,84,16,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "%",IDC_STATIC,162,113,12,14
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    25,145,134,15,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+END
+
+IDD_MODAL_PROPERTY DIALOG DISCARDABLE  0, 0, 201, 215
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "模型基本信息"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,40,187,50,14
+    PUSHBUTTON      "取消",IDCANCEL,113,187,50,14
+    GROUPBOX        "模型基本信息",IDC_STATIC,17,18,168,154
+    LTEXT           "模型长度：",IDC_STATIC,33,59,40,13
+    LTEXT           "模型宽度：",IDC_STATIC,33,82,40,13
+    LTEXT           "模型高度：",IDC_STATIC,33,106,40,13
+    LTEXT           "面片数：",IDC_STATIC,37,131,34,13
+    EDITTEXT        IDC_MODLENG,75,55,87,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MODWID,75,79,87,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MODHIGH,74,103,87,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MODTRIA,74,128,87,17,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_SLICE DIALOG DISCARDABLE  0, 0, 183, 177
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "切片参数设定"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDC_OK,35,134,50,14
+    PUSHBUTTON      "取消",IDC_CANCEL,105,134,50,14
+    EDITTEXT        IDC_EDIT_HEIGHT,86,44,71,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NUMBER,86,84,71,16,ES_AUTOHSCROLL
+    CONTROL         "按层厚分层：",IDC_HEIGHT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFT | WS_GROUP,27,40,56,21
+    CONTROL         "按层数分层：",IDC_NUMBER,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFT,28,82,56,19
+    GROUPBOX        "切片参数设定",IDC_STATIC,17,23,153,93
+END
+
+IDD_COMMUNICATION DIALOG DISCARDABLE  0, 0, 202, 233
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "通讯格式设定"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "关闭串口",IDScomOn,40,188,50,14
+    GROUPBOX        "通讯格式设定",IDC_STATIC,24,26,154,144
+    LTEXT           "串口号：",IDC_STATIC,44,55,33,13
+    LTEXT           "波特率：",IDC_STATIC,43,77,33,13
+    LTEXT           "数据位：",IDC_STATIC,44,100,33,13
+    LTEXT           "校验位：",IDC_STATIC,44,142,33,13
+    LTEXT           "停止位：",IDC_STATIC,44,121,33,13
+    COMBOBOX        IDC_COMBO_CommSelect,84,52,73,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BaudRate_Select,84,74,73,38,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_Date_Select,84,99,73,38,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_StopBit,84,123,73,39,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ParityCheck,83,143,73,35,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_MSCOMM,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,98,7,19,19
+    PUSHBUTTON      "取消",IDC_BUTCANCEL,111,188,53,14
+END
+
+IDD_DIALOG_CHECK DIALOGEX 0, 0, 373, 356
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "层查看"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "查看层轮廓",IDC_BUTCENGCHECK,281,290,50,14
+    PUSHBUTTON      "查看枪头分布",IDC_BUTCENGSCAN,281,316,50,14
+    CTEXT           "",IDC_CHVIEW,28,20,317,234,SS_SUNKEN | NOT WS_VISIBLE,
+                    WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    GROUPBOX        "参数设定",IDC_STATIC,29,269,316,72
+    CONTROL         "Slider1",IDC_SLIDER_CENG,"msctls_trackbar32",TBS_TOP | 
+                    TBS_NOTICKS | WS_TABSTOP,37,289,234,15,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "输入层数：",IDC_STATIC,43,314,44,12
+    EDITTEXT        IDC_EDIT_CENG,100,312,94,14,ES_AUTOHSCROLL
+    LTEXT           "层",IDC_STATIC,200,314,44,12
+END
+
+IDD_DIALOG_STL DIALOG DISCARDABLE  0, 0, 213, 281
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "STL格式转换"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "打开文件",IDC_BUT_GET_FILE,24,255,52,14
+    PUSHBUTTON      "清除列表",IDC_BUT_CLEAR,82,255,52,14
+    PUSHBUTTON      "退出",IDC_BUT_CANCEL,140,255,52,14
+    LISTBOX         IDC_LIST1,25,25,167,222,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "文件格式转换",IDC_STATIC,17,13,183,240
+END
+
+IDD_PRIMOD DIALOGEX 0, 0, 246, 277
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "打印模式选择"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "打印模式选择",IDC_STATIC,15,15,213,98
+    CONTROL         "单枪打印模式",IDC_RADIO_01,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,43,32,69,16
+    CONTROL         "双枪打印模式",IDC_RADIO_02,"Button",BS_AUTORADIOBUTTON,
+                    43,49,68,16
+    CONTROL         "三枪打印模式",IDC_RADIO_03,"Button",BS_AUTORADIOBUTTON,
+                    43,65,68,16
+    CONTROL         "四枪打印模式",IDC_RADIO_04,"Button",BS_AUTORADIOBUTTON,
+                    43,80,68,16
+    CONTROL         "五枪打印模式",IDC_RADIO_05,"Button",BS_AUTORADIOBUTTON,
+                    136,32,68,16
+    CONTROL         "六枪打印模式",IDC_RADIO_06,"Button",BS_AUTORADIOBUTTON,
+                    136,49,68,16
+    CONTROL         "七枪打印模式",IDC_RADIO_07,"Button",BS_AUTORADIOBUTTON,
+                    136,65,67,16
+    CONTROL         "八枪打印模式",IDC_RADIO_08,"Button",BS_AUTORADIOBUTTON,
+                    135,80,67,16
+    GROUPBOX        "枪头布置数据生成进度",IDC_STATIC,16,199,211,45
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    22,218,151,15,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT1,179,219,25,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "%",IDC_STATIC,208,221,14,16
+    PUSHBUTTON      "确定生成",IDC_DataOk,25,248,51,16
+    PUSHBUTTON      "写入数据库",IDC_DataWrt,95,248,51,16
+    PUSHBUTTON      "退出",IDC_DataCancel,166,248,51,16
+    GROUPBOX        "干涉极值",IDC_STATIC,16,119,212,66
+    LTEXT           "臂干涉极值：",IDC_STATIC,30,140,71,11
+    EDITTEXT        IDC_EDIT2,105,139,66,13,ES_AUTOHSCROLL
+    LTEXT           "枪干涉极值：",IDC_STATIC,30,163,71,11
+    EDITTEXT        IDC_EDIT4,105,162,66,13,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,175,142,34,12
+    LTEXT           "mm",IDC_STATIC,175,164,34,12
+END
+
+IDD_CHKPLA DIALOG DISCARDABLE  0, 0, 419, 269
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "查看枪头坐标"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "查看枪头坐标",IDC_STATIC,14,15,386,218
+    LTEXT           "请输入查看层：",IDC_STATIC,102,33,56,13
+    EDITTEXT        IDC_EDIT1,158,31,59,13,ES_AUTOHSCROLL
+    LTEXT           "打印头1：",IDC_STATIC,19,62,36,13
+    LTEXT           "打印头2：",IDC_STATIC,205,64,37,13
+    EDITTEXT        IDC_EDIT2,55,62,146,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,242,62,152,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "打印头3：",IDC_STATIC,19,99,36,13
+    LTEXT           "打印头4：",IDC_STATIC,205,101,36,13
+    EDITTEXT        IDC_EDIT4,55,99,145,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,242,99,152,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "打印头5：",IDC_STATIC,19,140,36,13
+    LTEXT           "打印头6：",IDC_STATIC,205,142,36,13
+    EDITTEXT        IDC_EDIT6,56,140,143,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT7,242,140,151,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "打印头7：",IDC_STATIC,19,181,36,13
+    LTEXT           "打印头8：",IDC_STATIC,205,183,36,13
+    EDITTEXT        IDC_EDIT8,57,181,141,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT9,242,181,150,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "确定查看",IDC_BUT_CHECKPLA,142,238,47,16
+    PUSHBUTTON      "取消查看",IDC_BUT_CANCELPLA,229,238,47,16
+    LTEXT           "轮廓环：",IDC_STATIC,221,32,33,11
+    EDITTEXT        IDC_EDIT10,255,31,63,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT11,55,80,145,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT12,242,80,152,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT13,56,118,144,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT14,242,118,152,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT15,57,160,142,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT16,242,160,151,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT17,57,202,141,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT18,242,202,150,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_MODBUSRTU DIALOG DISCARDABLE  0, 0, 290, 326
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "ModBusRTU通讯"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "串口参数设置及当前层数",IDC_STATIC,16,7,258,99
+    LTEXT           "串口号：",IDC_STATIC,33,29,32,12
+    GROUPBOX        "",IDC_STATIC,26,15,114,84
+    COMBOBOX        IDC_COMBO_CommSelect_RTU,67,28,62,37,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "波特率：",IDC_STATIC,33,43,32,12
+    COMBOBOX        IDC_COMBO_BaudRate_Select_RTU,67,42,62,35,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "数据位：",IDC_STATIC,33,57,32,12
+    COMBOBOX        IDC_COMBO_Data_Select_RTU,67,56,62,39,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "停止位：",IDC_STATIC,33,70,32,12
+    COMBOBOX        IDC_COMBO_StopBit_RTU,67,69,62,44,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "校验位：",IDC_STATIC,33,84,32,12
+    COMBOBOX        IDC_COMBO_ParityCheck_RTU,67,83,62,45,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,146,15,116,53
+    PUSHBUTTON      "开始打印",IDC_BUT_OPENRTU,152,46,50,14
+    PUSHBUTTON      "停止打印",IDC_BUT_CLOSERTU,203,46,54,14
+    GROUPBOX        "从机地址设置",IDC_STATIC,16,109,258,27
+    LTEXT           "从机地址（1-125）：",IDC_STATIC,35,121,78,13
+    EDITTEXT        IDC_E_RTU,116,120,56,11,ES_AUTOHSCROLL
+    LTEXT           "（0为主机广播模式）",IDC_STATIC,178,122,78,13
+    GROUPBOX        "手动查询",IDC_STATIC,16,140,258,48
+    LTEXT           "读写地址：",IDC_STATIC,34,153,41,11
+    EDITTEXT        IDC_E_REGADD,74,150,67,13,ES_AUTOHSCROLL
+    LTEXT           "（0XXXX/4XXXX）",IDC_STATIC,150,153,67,11
+    LTEXT           "读数量：",IDC_STATIC,34,172,32,10
+    EDITTEXT        IDC_E_REGCOUNT,66,171,50,11,ES_AUTOHSCROLL
+    LTEXT           "写数值：",IDC_STATIC,121,172,32,10
+    EDITTEXT        IDC_E_VALUE,153,171,53,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "读命令",IDC_B_READ,221,152,45,12
+    PUSHBUTTON      "写命令",IDC_B_WRITE,221,171,45,12
+    GROUPBOX        "通讯输出",IDC_STATIC,16,190,258,111
+    PUSHBUTTON      "退出",IDC_B_CLOSE,166,303,54,14
+    CONTROL         "",IDC_R_TEXT,"RICHEDIT",ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,21,200,247,93
+    GROUPBOX        "当前层数",IDC_STATIC,146,72,116,25
+    EDITTEXT        IDC_EDIT_CENGNUM,175,81,63,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "打开串口",IDC_BUT_OPEN_MSCOM,152,27,50,15
+    PUSHBUTTON      "关闭串口",IDC_BUT_CLOSE_MSCOM,203,27,54,15
+    PUSHBUTTON      "清除列表框",IDC_BUT_CLEAR_RICHEDIT,64,303,54,14
+END
+
+IDD_DIALOG_MODBUS_TCP DIALOG DISCARDABLE  0, 0, 247, 290
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "以太网下载"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "退出",IDOK,133,267,50,14
+    GROUPBOX        "连接设置",IDC_STATIC,13,13,221,53
+    LTEXT           "服务器IP：",IDC_STATIC,17,29,39,11
+    EDITTEXT        IDC_EDIT_SERVER_ADDR,56,28,68,13,ES_AUTOHSCROLL
+    LTEXT           "端口号：",IDC_STATIC,20,46,32,11
+    EDITTEXT        IDC_EDIT_PORT,56,45,67,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "创建连接",IDC_BUTTON_CREAT_LINK,128,28,45,13
+    PUSHBUTTON      "开始下载",IDC_BUTTON_START_DOWNLOAD,128,46,46,12
+    PUSHBUTTON      "断开连接",IDC_BUTTON_BREAK_LINK,180,28,46,13
+    PUSHBUTTON      "停止下载",IDC_BUTTON_STOP_DOWNLOAD,180,46,46,12
+    GROUPBOX        "手动测试连接",IDC_STATIC,13,100,221,59
+    LTEXT           "读写地址：",IDC_STATIC,24,114,40,11
+    EDITTEXT        IDC_EDIT_DATA_ADDR,67,111,46,13,ES_AUTOHSCROLL
+    LTEXT           "（00对应AMC600的%MW0）",IDC_STATIC,123,112,100,11
+    LTEXT           "写float：",IDC_STATIC,29,129,31,8
+    EDITTEXT        IDC_EDIT_DATA_FLOAT,67,127,46,12,ES_AUTOHSCROLL
+    LTEXT           "写HEX：",IDC_STATIC,29,143,32,11
+    EDITTEXT        IDC_EDIT_DATA_WRITE,78,141,35,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "写HEX",IDC_BUTTON_WRITE,158,141,28,12
+    PUSHBUTTON      "读HEX",IDC_BUTTON_READ,121,141,28,12
+    GROUPBOX        "下载进度",IDC_STATIC,13,69,221,27
+    LTEXT           "请求层数：",IDC_STATIC,26,81,40,10
+    EDITTEXT        IDC_EDIT_CENG_NUM,67,79,46,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "下载进度：",IDC_STATIC,124,81,40,10
+    EDITTEXT        IDC_EDIT_PRIT_PERCENT,164,80,40,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "%",IDC_STATIC,205,81,10,10
+    GROUPBOX        "交互输出",IDC_STATIC,13,164,221,98
+    CONTROL         "",IDC_RICHEDIT_R,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | WS_BORDER | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP,18,177,211,78
+    LTEXT           "（依次顺延）",IDC_STATIC,147,125,63,10
+    PUSHBUTTON      "清除列表框",IDC_BUTTON_CLEAN_TEXT,53,267,53,14
+    LTEXT           "0x",IDC_STATIC,67,143,10,9
+    PUSHBUTTON      "写float",IDC_BUTTON_WRITE_FLOAT,194,141,31,12
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "3DPMax Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "3DPMax\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "3DPMax.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "3DPMax 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_3DPSTA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+
+    IDD_MODAL_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_SLICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_COMMUNICATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_DIALOG_CHECK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 366
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 349
+    END
+
+    IDD_DIALOG_STL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_PRIMOD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_CHKPLA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 262
+    END
+
+    IDD_DIALOG_MODBUSRTU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 319
+    END
+
+    IDD_DIALOG_MODBUS_TCP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_COMMUNICATION DLGINIT
+BEGIN
+    IDC_COMBO_CommSelect, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COMBO_CommSelect, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COMBO_CommSelect, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COMBO_CommSelect, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COMBO_CommSelect, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_COMBO_CommSelect, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_COMBO_CommSelect, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_COMBO_CommSelect, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_COMBO_CommSelect, 0x403, 5, 0
+0x4f43, 0x394d, "\000" 
+    IDC_COMBO_CommSelect, 0x403, 6, 0
+0x4f43, 0x314d, 0x0030, 
+    IDC_COMBO_CommSelect, 0x403, 6, 0
+0x4f43, 0x314d, 0x0031, 
+    IDC_COMBO_CommSelect, 0x403, 6, 0
+0x4f43, 0x314d, 0x0032, 
+    IDC_COMBO_BaudRate_Select, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO_BaudRate_Select, 0x403, 6, 0
+0x3431, 0x3034, 0x0030, 
+    IDC_COMBO_BaudRate_Select, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMBO_BaudRate_Select, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_COMBO_BaudRate_Select, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_COMBO_BaudRate_Select, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_COMBO_BaudRate_Select, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_COMBO_BaudRate_Select, 0x403, 7, 0
+0x3231, 0x3038, 0x3030, "\000" 
+    IDC_COMBO_BaudRate_Select, 0x403, 7, 0
+0x3532, 0x3036, 0x3030, "\000" 
+    IDC_COMBO_Date_Select, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_Date_Select, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_Date_Select, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_Date_Select, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_Date_Select, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_StopBit, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_StopBit, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_ParityCheck, 0x403, 2, 0
+0x004e, 
+    IDC_COMBO_ParityCheck, 0x403, 2, 0
+0x004f, 
+    IDC_COMBO_ParityCheck, 0x403, 2, 0
+0x0045, 
+    IDC_MSCOMM, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+IDD_DIALOG_MODBUSRTU DLGINIT
+BEGIN
+    IDC_COMBO_CommSelect_RTU, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COMBO_CommSelect_RTU, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COMBO_CommSelect_RTU, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COMBO_CommSelect_RTU, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COMBO_CommSelect_RTU, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_COMBO_CommSelect_RTU, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_COMBO_CommSelect_RTU, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_COMBO_CommSelect_RTU, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_COMBO_CommSelect_RTU, 0x403, 5, 0
+0x4f43, 0x394d, "\000" 
+    IDC_COMBO_BaudRate_Select_RTU, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO_BaudRate_Select_RTU, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_COMBO_BaudRate_Select_RTU, 0x403, 7, 0
+0x3231, 0x3038, 0x3030, "\000" 
+    IDC_COMBO_BaudRate_Select_RTU, 0x403, 7, 0
+0x3532, 0x3036, 0x3030, "\000" 
+    IDC_COMBO_Data_Select_RTU, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_Data_Select_RTU, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_StopBit_RTU, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_StopBit_RTU, 0x403, 4, 0
+0x2e31, 0x0035, 
+    IDC_COMBO_ParityCheck_RTU, 0x403, 2, 0
+0x004e, 
+    IDC_COMBO_ParityCheck_RTU, 0x403, 2, 0
+0x004f, 
+    IDC_COMBO_ParityCheck_RTU, 0x403, 2, 0
+0x0045, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "3DPMax\n\nMy3DPM\n\n\nMy3DPMax.Document\nMy3DPM Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "3DPMax"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "查看层轮廓\n查看层轮廓"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUOUTLINE          "查看层轮廓\n查看层轮廓"
+    ID_VIEW_FRONT           "正视图\n正视图"
+    ID_MENUPRINTER          "查看喷头分布\n查看喷头分布"
+    ID_VIEW_LEFT            "左视图\n左视图"
+    ID_VIEW_TOP             "俯视图\n俯视图"
+    ID_VIEW_RIGHT           "右视图\n右视图"
+    ID_VIEW_BEHIND          "后视图\n后视图"
+    ID_VIEW_BOTTOM          "底视图\n底视图"
+    ID_VIEW_NE_ISOMETRIC    "斜二测\n斜二测"
+    ID_BIN2ASC              "STL文件二进制格式至文本格式转换并显示\n文件格式转换"
+    ID_MODAL_PROPERTY       "模型属性\n模型属性"
+    ID_BUTTON_PROCESS       "打印进度\n查看打印进度"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON_SLICE         "分层\n分层"
+    ID_BUTTON_FILL          "打印模式选择\n打印模式选择"
+    ID_STL_FILEIN           "打开文件\n打开文件"
+    ID_FILE_CLEAR           "清除模型\n清除模型"
+    ID_PRINTING             "打印\n打印"
+    ID_BUTTON_CHKPLA        "查看枪头坐标\n查看枪头坐标"
+    ID_BUTMODBUS            "ModBus通讯\nModBus通讯"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON32800          "下载切片数据\n下载切片数据"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\3DPMax.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
