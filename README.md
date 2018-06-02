@@ -29,4 +29,4 @@
         （c）若某一枪头的所有坐标为零时，，则代表该打印头撤出工作。
 5.软件运行界面如下图所示：
 
-![image](https://github.com/wuyong66/3DPMax_v1/img_folder/main.png)
+![image](https://github.com/wuyong66/3DPMax_v1/blob/master/img_folder/main.png)
